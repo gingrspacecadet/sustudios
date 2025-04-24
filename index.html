@@ -4,28 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>S/U Studios</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <span>S/U Studios</span
+    <span>S/U Studios</span>
     <nav>
-      <a href="#modpacks">Modpacks</a>
+      <a href="#modpacks" id="modpacks-toggle">Modpacks</a>
+      <ul id="modpack-list" class="hidden">
+        <!-- JS will populate this -->
+      </ul>
     </nav>
   </header>
+
   <main>
     <section id="modpacks">
       <p>Here are some of our modpacks:</p>
-        <div class="modpacks">
-          <div class="overstressed">
+      <div class="modpacks">
+        <section id="overstressed" data-title="Create: Overstressed">
           <p>Create: Overstressed</p>
           <span>(Some info about it)</span><br>
-          <a>(link to modpack)</a>
-        </div>
+          <a href="#">(link to modpack)</a>
+        </section>
+
+        <!-- Add more <section id="..."> for other modpacks -->
       </div>
     </section>
-  </main
+  </main>
+
   <footer>
-     <span>&copy; 2025 sustudios. All rights reserved.</span>
+    <span>&copy; 2025 sustudios. All rights reserved.</span>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>
