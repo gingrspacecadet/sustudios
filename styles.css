@@ -1,23 +1,22 @@
-/* General Reset */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
 html, body {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2d31;
-  color: #f2f3f5;
+  background-color: #1e1e2e; /* Base */
+  color: #cdd6f4; /* Text */
   display: flex;
   flex-direction: column;
 }
 
 /* Header */
 header {
-  background-color: #1e1f22;
+  background-color: #181825; /* Mantle */
   padding: 15px 25px;
   display: flex;
   justify-content: space-between;
@@ -34,14 +33,14 @@ header span {
 }
 
 nav a {
-  color: #f2f3f5;
+  color: #cdd6f4; /* Text */
   margin-left: 20px;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #7289da;
+  color: #b4befe; /* Lavender */
 }
 
 /* Dropdown */
@@ -49,10 +48,10 @@ nav a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background: #1e1f22;
+  background: #313244; /* Surface0 */
   list-style: none;
   padding: 10px;
-  border: 1px solid #3c3f45;
+  border: 1px solid #45475a;
   border-radius: 6px;
   opacity: 0;
   visibility: hidden;
@@ -72,12 +71,12 @@ nav a:hover {
 }
 
 #modpack-list li a {
-  color: #f2f3f5;
+  color: #cdd6f4;
   text-decoration: none;
 }
 
 #modpack-list li a:hover {
-  color: #7289da;
+  color: #89b4fa; /* Blue */
 }
 
 /* Main */
@@ -90,16 +89,16 @@ main section {
   margin-bottom: 40px;
 }
 
-/* Partners & About */
+/* About & Partners */
 #about, #partners {
-  background-color: #313338;
+  background-color: #313244; /* Surface0 */
   padding: 20px;
   border-radius: 8px;
 }
 
 #about h2, #partners h2 {
   margin-bottom: 10px;
-  color: #fff;
+  color: #cdd6f4;
 }
 
 /* Modpacks Container */
@@ -109,9 +108,9 @@ main section {
   gap: 20px;
 }
 
-/* Individual Modpack */
+/* Individual Modpack Section */
 .modpacks > section {
-  background-color: #313338;
+  background-color: #313244;
   border-radius: 8px;
   padding: 15px;
   flex: 1 1 250px;
@@ -120,24 +119,24 @@ main section {
 }
 
 .modpacks > section:hover {
-  background-color: #3a3d42;
+  background-color: #45475a;
 }
 
 .modpacks > section p {
   font-weight: 600;
   margin-bottom: 5px;
-  color: #f2f3f5;
+  color: #cdd6f4;
 }
 
 .modpacks > section span {
   font-size: 0.95em;
-  color: #c4c4c4;
+  color: #bac2de; /* Subtext1 */
 }
 
 .modpacks > section a {
   display: inline-block;
   margin-top: 8px;
-  color: #7289da;
+  color: #89b4fa;
   text-decoration: none;
 }
 
@@ -149,8 +148,8 @@ main section {
 footer {
   text-align: center;
   padding: 15px;
-  color: #7f8287;
+  color: #6c7086; /* Overlay0 */
   font-size: 0.9em;
-  background-color: #1e1f22;
-  border-top: 1px solid #3c3f45;
+  background-color: #181825;
+  border-top: 1px solid #313244;
 }
