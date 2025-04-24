@@ -116,8 +116,17 @@ nav {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
   z-index: 1000;
+}
+
+#modpack-list.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 #modpack-list li {
@@ -131,10 +140,6 @@ nav {
 
 #modpack-list li a:hover {
   text-decoration: underline;
-}
-
-#modpack-list.show {
-  display: block;
 }
 
 .modpacks > section {
