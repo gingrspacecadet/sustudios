@@ -23,4 +23,25 @@ document.addEventListener("DOMContentLoaded", () => {
       list.classList.remove("show");
     }
   });
+  const images = [
+    "/assets/slideshow/1.png",
+    "/assets/slideshow/2.png",
+    "/assets/slideshow/3.png",
+    "/assets/slideshow/4.png",
+    "/assets/slideshow/5.jpg",
+    "/assets/slideshow/6.png",
+    "/assets/slideshow/7.png"
+  ];
+
+  let index = 0;
+  const body = document.body;
+
+  function changeBackground() {
+    body.style.setProperty('--slideshow-img', `url(${images[index]})`);
+    index = (index + 1) % images.length;
+  }
+
+  changeBackground(); // Set initial image
+  setInterval(changeBackground, 60000); // Change every 60s
+
 });
