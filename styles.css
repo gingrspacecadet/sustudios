@@ -14,6 +14,12 @@ body {
   padding: 20px;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header styling */
 header {
   background-color: #222;
@@ -41,6 +47,7 @@ header nav a:hover {
 
 /* Main section styling */
 main {
+  flex: 1;
   margin-top: 20px;
 }
 
@@ -89,8 +96,8 @@ main {
 /* Footer styling */
 footer {
   text-align: center;
-  margin-top: 40px;
   padding: 10px 0;
   color: #777;
   font-size: 0.9em;
+  background-color: #f0f0f0;
 }
