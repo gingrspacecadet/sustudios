@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "/assets/slideshow/7.png"
   ];
 
-  let index = Math.floor(Math.random() * imageCount);;
+  let index = Math.floor(Math.random() * images.length);;
   const body = document.body;
 
   function changeBackground() {
