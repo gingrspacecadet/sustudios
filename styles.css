@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main section styling */
+main {
+  margin-top: 20px;
+}
+
+/* Modpacks section */
+#modpacks p {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.modpacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual modpack cards */
+.modpacks > div {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+}
+
+.modpacks > div p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modpacks > div span {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.modpacks > div a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.modpacks > div a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  color: #777;
+  font-size: 0.9em;
+}
