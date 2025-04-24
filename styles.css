@@ -153,3 +153,19 @@ footer {
   background-color: #181825;
   border-top: 1px solid #313244;
 }
+
+/* General link styles */
+a {
+  color: #89b4fa; /* Blue */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #b4befe; /* Lavender */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #9399b2; /* Subtext0 (more muted) */
+}
